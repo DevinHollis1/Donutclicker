@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+</head>
+<body>
+    <nav>
+        <ul class="main-nav">
+            <li><a onclick="toggleAboutDropdown(event)">About</a></li>
+            <li><a onclick="toggleInspirationDropdown(event)">Inspiration</a></li>
+            <li class="push"><a onclick="toggleContactsDropdown(event)">Contacts</a></li>
+        </ul>
+            </nav>
+
+            <div class="dropdowns" id="dropdown-container">
+                <div id="about-dropdown" class="dropdown-box">
+                    <h3>Art</h3>
+                    <p>
+                        Ever since I was a child, drawing has been one of my favorite ways past time. From the moment I could hold a pencil, I found joy in what I could create on paper. Drawing allowed me to express my imagination and bring my thoughts to life. Having this skill has allowed me to have a broad imagination and stay creative in whatever I'm doing!
+                    </p>
+                    </div>
+                    <div  id="inspiration-dropdown" class="dropdown-box">
+                        <h3>Inspiration Site</h3>
+                        <p>
+                            Ever since I was a child, drawing has been one of my favorite ways past time. From the moment I could hold a pencil, I found joy in what I could create on paper. Drawing allowed me to express my imagination and bring my thoughts to life. Having this skill has allowed me to have a broad imagination and stay creative in whatever I'm doing!
+                        </p>
+                        </div>
+                        <div  id="contacts-box" class="dropdown-box">
+                            <h3>Contacts</h3>
+                            <p>
+                                Ever since I was a child, drawing has been one of my favorite ways past time. From the moment I could hold a pencil, I found joy in what I could create on paper. Drawing allowed me to express my imagination and bring my thoughts to life. Having this skill has allowed me to have a broad imagination and stay creative in whatever I'm doing!
+                            </p>
+                            </div>
+            </div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>Fred's Donut Maker</h1>
+        </header>
+        <section class="content">
+            <h1>Donuts 0</h1>
+            <div class="bake-buttons">
+                <button>Donut Baker<img src="Donuts-PNG-File.png"></button>
+            </div>
+                <div id="second-button">
+                    <h1>Auto Bakers 0</h1>
+                    <button>Purchase Auto Baker</button>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <h3>How Many Donuts Can You Bake?</h3>
+            </aside>
+    <script src="script.js"></script>
+    <script src="Donutmaker.js"></script>
+</body>
+</html>

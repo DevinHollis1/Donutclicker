@@ -1,0 +1,157 @@
+.main-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    border: 3px solid rgb(153, 0, 145);
+    background-color: rgb(0, 0, 0);
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 0, 157);
+    
+}
+
+.dropdowns{
+    display: none;
+    position: relative;
+    border: 5px solid rgb(255, 0, 157);
+    height: 300px;
+}
+
+.dropdowns.show {
+    display: block;
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    background-color: #ec5091;
+    margin-top: 25px;
+    padding: 10px;
+    z-index: 1;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-box.show {
+    display: block;
+}
+
+.dropdown-box h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+    color: #ec5091;
+}
+
+div#about-dropdown{
+    margin-left: 575px;
+    
+}
+
+div#inspiration-dropdown{
+    margin-left: 575px;
+    
+}
+
+div#contacts-box{
+    left: 575px;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header' 
+    'content content content sidebar'
+    'footer footer footer footer';
+    gap: 1rem;
+}
+
+
+
+.header {
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    margin: 10px;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bake-buttons button > img {
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    float: right;
+}
+
+.baked-buttons{
+    padding-bottom: 1rem;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header,
+.content,
+.sidebar,
+.footer {
+    border: 1px black solid;
+    padding: 0.5rem;
+}
