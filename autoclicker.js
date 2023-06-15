@@ -1,5 +1,5 @@
 let autoClickerCount = 0;
-let autoClickerCost = 10;
+let autoClickerCost = 100;
 
 
 const autoClicker = document.querySelector('#second-button button');

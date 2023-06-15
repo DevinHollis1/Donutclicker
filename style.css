@@ -25,11 +25,21 @@ a:hover {
     
 }
 
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header' 
+    'content content content sidebar'
+    'footer footer footer footer';
+    gap: 1rem;
+}
+
+
 .dropdowns{
     display: none;
     position: relative;
-    border: 5px solid rgb(255, 0, 157);
     height: 300px;
+
 }
 
 .dropdowns.show {
@@ -60,30 +70,18 @@ a:hover {
     color: #ec5091;
 }
 
-div#about-dropdown{
-    margin-left: 575px;
-    
+div#about-dropdown {
+    margin-left: 80px;
 }
 
 div#inspiration-dropdown{
-    margin-left: 575px;
-    
+    margin-left: 590px;
 }
 
 div#contacts-box{
-    left: 575px;
+    margin-left: 1090px;
 }
 
-
-
-.container{
-    display: grid;
-    grid-template-areas: 
-    'header header header header' 
-    'content content content sidebar'
-    'footer footer footer footer';
-    gap: 1rem;
-}
 
 
 
