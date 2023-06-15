@@ -1,8 +1,10 @@
 let autoClickerCount = 0;
+let autoClickerCost = 10;
 
 
 const autoClicker = document.querySelector('#second-button button');
 const autoClickerElement = document.querySelector('#second-button h1')
+const autoClickerInterval = 1000;
 
 
 function updateAutoClickerCount() {
@@ -17,13 +19,27 @@ function controlAutoClickerCount() {
 }
 
 function controlAutoClickerClick(){
-    if (donutCount >= 10){
-        donutCount -= 10;
+    if (donutCount >= autoClickerCost){
+        donutCount -= autoClickerCost;
         autoClickerCount++;
+        autoClickerCost = calculateAutoClickerCost();
         updateDonutCount();
         updateAutoClickerCount()
         console.log(`purchased Auto Baker! donut count: ${donutCount}`);
     }
 }
 
-autoClicker.addEventListener('click', controlAutoClickerClick)
+function calculateAutoClickerCost() {
+    return Math.floor( autoClickerCost * 1.1);
+    
+}
+
+function incrementDonutCount() {
+    donutCount += autoClickerCount;
+    updateDonutCount();
+}
+setInterval(incrementDonutCount, autoClickerInterval);
+
+
+autoClicker.addEventListener('click', controlAutoClickerClick,)
+
