@@ -42,7 +42,7 @@ function calculateAutoClickerCost() {
 
 
 function updateDisplay() {
-    clicksToPurchaseElement.textContent = `Click ${autoClickerCost} Times for Auto Baker!`
+    clicksToPurchaseElement.textContent = ` ${autoClickerCost}`
 }
 
 function controlAutoClicks(){
