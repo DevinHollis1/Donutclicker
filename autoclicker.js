@@ -1,6 +1,6 @@
 let autoClickerCount = 0;
-let autoClickerCost = 10;
-let clicksToPurchase = 10;
+let autoClickerCost = 100;
+let clicksToPurchase = 100;
 
 
 

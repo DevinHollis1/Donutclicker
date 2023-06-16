@@ -144,10 +144,36 @@ div#contacts-box{
 
 .sidebar h1{
     font-size: xx-large;
+    margin-top: 80px;
 }
 
+#donutCount1{
+    color: rgb(7, 231, 18);
+}
 
+#clicksToPurchase{
+    color: rgb(255, 0, 0);
+}
 
+div#reset-button button{
+    border: none;
+    background-color: transparent;
+    
+}
+
+div#reset-button button:hover img {
+    animation: bounce 0.5s infinite;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes bounce {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-2px);
+    }
+}
 
 
 
