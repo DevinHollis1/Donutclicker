@@ -72,8 +72,8 @@ function updateAutoClickerButton() {
 
 function resetPage() {
     autoClickerCount = 0;
-    autoClickerCost = 10;
-    clicksToPurchase = 10;
+    autoClickerCost = 100;
+    clicksToPurchase = 100;
     donutCount = 0;
     updateAutoClickerCount();
     updateDisplay();

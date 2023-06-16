@@ -98,6 +98,11 @@ div#contacts-box{
     text-align: center;
 }
 
+.header img{
+    width: 60px;
+    height: 40px;
+}
+
 
 
 .content{
@@ -131,6 +136,16 @@ div#contacts-box{
     transform: translateY(-8px);
     }
 }
+
+div#best-donuts img{
+    width: 250px;
+    margin-top: 25px;
+}
+
+div#best-donuts{
+    margin-top: 100px;
+}
+
 
 .sidebar{
     grid-area: sidebar;
@@ -174,6 +189,21 @@ div#reset-button button:hover img {
     transform: translateY(-2px);
     }
 }
+
+
+div#reset-picture img{
+    width: 225px;
+}
+
+div#reset-picture {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
 
 
 
