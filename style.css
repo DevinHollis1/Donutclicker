@@ -3,7 +3,7 @@
     list-style: none;
     padding: 0;
     width: 100%;
-    border: 3px solid rgb(153, 0, 145);
+    border: 3px solid  rgb(255, 0, 157);
     background-color: rgb(0, 0, 0);
 }
 
@@ -55,6 +55,7 @@ a:hover {
     z-index: 1;
     width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
 }
 
 .dropdown-box.show {
@@ -97,22 +98,38 @@ div#contacts-box{
     text-align: center;
 }
 
+
+
 .content{
     margin-top: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-.bake-buttons button > img {
-    display: flex;
-    width: 40px;
-    height: 40px; 
-    float: right;
+.bake-buttons button > img{
+    width: 300px;
 }
 
-.baked-buttons{
-    padding-bottom: 1rem;
+.bake-buttons button{
+    border: none;
+    background-color: transparent;
+}
+
+.bake-buttons button:hover img {
+    animation: bounce 0.5s infinite;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes bounce {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-8px);
+    }
 }
 
 .sidebar{
@@ -121,8 +138,13 @@ div#contacts-box{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
+.sidebar h1{
+    font-size: xx-large;
+}
 
 
 
